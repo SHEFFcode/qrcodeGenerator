@@ -24,7 +24,7 @@ public class ImageService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ImageService.class);
 
-    public Mono<byte[]> generateQRCode(String text, int width, int height) {
+    Mono<byte[]> generateQRCode(String text, int width, int height) {
 
         Assert.hasText(text, "text must not be empty");
         Assert.isTrue(width > 0, "width must be greater than zero");

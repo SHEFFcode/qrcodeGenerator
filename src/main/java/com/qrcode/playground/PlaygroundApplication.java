@@ -31,8 +31,8 @@ import static org.springframework.web.reactive.function.server.ServerResponse.ok
 @CrossOrigin(methods = {RequestMethod.GET, RequestMethod.DELETE})
 @SpringBootApplication
 public class PlaygroundApplication {
-    public static final String QRCODE_ENDPOINT = "/qrcode";
-    public static final long THIRTY_MINUTES = 1800000;
+    private static final String QRCODE_ENDPOINT = "/qrcode";
+    private static final long THIRTY_MINUTES = 1800000;
 
     private final ImageService imageService;
 
